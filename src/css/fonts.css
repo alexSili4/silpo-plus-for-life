@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Akrobat';
+  src: local('Helvetica'), url('/fonts/akrobat/Akrobat-Black.otf') format('opentype');
+  font-weight: 900;
+}
