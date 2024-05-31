@@ -26,10 +26,6 @@
   transition: fill var(--transition-duration-and-func);
 }
 
-.mobile-menu-btn:is(:hover, :focus) > .mobile-menu-btn-icon {
-  fill: var(--accent-secondary);
-}
-
 .header-content-wrap {
   display: flex;
   justify-content: space-between;
@@ -94,19 +90,49 @@
 }
 
 .header-contribution-btn {
+  position: relative;
   min-width: 170px;
   height: 48px;
   border: none;
-  padding: 16px;
   border-radius: 24px;
   background-color: var(--primary-color);
+}
+
+.header-contribution-btn-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
   color: var(--white-color);
   font-family: Akrobat;
   font-size: 16px;
   font-weight: 900;
-  line-height: 0.9;
+  text-wrap: nowrap;
   text-transform: uppercase;
-  transition: background-color var(--transition-duration-and-func);
+  transform: translateX(calc(-50%)) translateY(-50%);
+  transition: transform var(--transition-duration-and-func);
+}
+
+.header-contribution-btn-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  fill: var(--white-color);
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  transition: opacity var(--transition-duration-and-func), transform var(--transition-duration-and-func);
+}
+
+.header-contribution-btn:is(:hover, :focus) > .header-contribution-btn-title {
+  transform: translateX(calc(-50% - 9px)) translateY(-50%);
+}
+
+.header-contribution-btn:is(:hover, :focus) > .header-contribution-btn-icon {
+  opacity: 1;
+  transform: translateX(55px) translateY(-50%);
 }
 
 .header-menu {
