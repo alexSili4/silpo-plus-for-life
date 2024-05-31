@@ -77,6 +77,18 @@
   transition: fill var(--transition-duration-and-func);
 }
 
+.menu-link:is(:hover, :focus) .menu-link-title {
+  color: var(--accent);
+}
+
+.menu-link.support:is(:hover, :focus) .menu-link-title {
+  color: var(--green-color);
+}
+
+.menu-link.support:is(:hover, :focus) .menu-link-icon {
+  fill: var(--green-color);
+}
+
 .header-contribution-btn {
   position: relative;
   min-width: 170px;
