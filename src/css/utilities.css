@@ -34,7 +34,8 @@ a {
 }
 
 .container {
-  /* width: 1276px; */
+  position: relative;
+  width: 372px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;

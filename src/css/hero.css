@@ -1,0 +1,161 @@
+.hero-section {
+  padding-top: 45px;
+  padding-bottom: 94px;
+  background-color: var(--body-color);
+  overflow-x: hidden;
+}
+
+.hero-title {
+  color: #37342b;
+  font-family: Akrobat;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-desc {
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.hero-basket-img-wrap {
+  position: relative;
+  width: 154px;
+  margin-top: 112px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-top-plus-img {
+  position: absolute;
+  top: -17px;
+  left: 69px;
+  width: 22px;
+}
+
+.hero-left-plus-img {
+  position: absolute;
+  top: 3px;
+  left: 34px;
+  width: 15px;
+}
+
+.hero-bottom-plus-img {
+  position: absolute;
+  top: 3px;
+  left: 49px;
+  width: 38px;
+}
+
+.hero-right-plus-img {
+  position: absolute;
+  top: -10px;
+  left: 89px;
+  width: 38px;
+}
+
+.hero-left-hand-mobile-icon {
+  position: absolute;
+  top: 253px;
+  right: 105px;
+  display: block;
+  width: 404px;
+  height: 280px;
+}
+
+.hero-left-hand-desk-icon {
+  display: none;
+}
+
+.hero-right-hand-mobile-icon {
+  position: absolute;
+  top: 188px;
+  left: 114px;
+  display: block;
+  width: 387px;
+  height: 212px;
+}
+
+.hero-right-hand-desk-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1310px) {
+  .hero-section {
+    padding-top: 70px;
+    padding-bottom: 163px;
+  }
+
+  .hero-title {
+    font-size: 98px;
+    line-height: 1;
+  }
+
+  .hero-desc {
+    width: 482px;
+  }
+
+  .hero-basket-img-wrap {
+    width: 336px;
+    margin-top: 216px;
+  }
+
+  .hero-top-plus-img {
+    top: -36px;
+    left: 150px;
+    width: 49px;
+  }
+
+  .hero-left-plus-img {
+    top: 6px;
+    left: 74px;
+    width: 33px;
+  }
+
+  .hero-bottom-plus-img {
+    top: 6px;
+    left: 106px;
+    width: 83px;
+  }
+
+  .hero-right-plus-img {
+    top: -22px;
+    left: 195px;
+    width: 83px;
+  }
+
+  .hero-left-hand-mobile-icon {
+    display: none;
+  }
+
+  .hero-left-hand-desk-icon {
+    position: absolute;
+    top: 209px;
+    right: 450px;
+    width: 1056px;
+    height: 659px;
+    display: block;
+  }
+
+  .hero-right-hand-mobile-icon {
+    display: none;
+  }
+
+  .hero-right-hand-desk-icon {
+    position: absolute;
+    top: 98px;
+    left: 477px;
+    display: block;
+    width: 930px;
+    height: 484px;
+  }
+}

@@ -1,5 +1,13 @@
 @font-face {
   font-family: 'Akrobat';
-  src: local('Helvetica'), url('/fonts/akrobat/Akrobat-Black.otf') format('opentype');
+  src: local('Helvetica'),
+    url('/fonts/akrobat/Akrobat-Black.otf') format('opentype');
   font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope'),
+    url('../fonts/manrope/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
 }
