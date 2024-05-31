@@ -22,7 +22,7 @@
   display: block;
   width: 30px;
   height: 30px;
-  fill: #5d398e;
+  fill: var(--primary-color);
   transition: fill var(--transition-duration-and-func);
 }
 
@@ -75,18 +75,6 @@
   height: 18px;
   fill: #37342b;
   transition: fill var(--transition-duration-and-func);
-}
-
-.menu-link:is(:hover, :focus) .menu-link-title {
-  color: var(--accent);
-}
-
-.menu-link.support:is(:hover, :focus) .menu-link-title {
-  color: var(--green-color);
-}
-
-.menu-link.support:is(:hover, :focus) .menu-link-icon {
-  fill: var(--green-color);
 }
 
 .header-contribution-btn {
