@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: var(--body-color);
+}
+
 .hidden-element {
   position: fixed;
   transform: scale(0);
@@ -42,8 +46,22 @@ a {
   margin-right: auto;
 }
 
+.section-title {
+  color: #37342b;
+  font-family: Akrobat;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 @media screen and (min-width: 1310px) {
   .container {
     width: 1308px;
+  }
+
+  .section-title {
+    font-size: 42px;
+    text-align: left;
   }
 }

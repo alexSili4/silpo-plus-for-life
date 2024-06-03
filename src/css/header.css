@@ -1,6 +1,5 @@
 .header {
   border-bottom: 1px solid rgba(93, 90, 136, 0.17);
-  background: #f6f4ee;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -123,7 +122,8 @@
   fill: var(--white-color);
   opacity: 0;
   transform: translateX(-50%) translateY(-50%);
-  transition: opacity var(--transition-duration-and-func), transform var(--transition-duration-and-func);
+  transition: opacity var(--transition-duration-and-func),
+    transform var(--transition-duration-and-func);
 }
 
 .header-contribution-btn:is(:hover, :focus) > .header-contribution-btn-title {

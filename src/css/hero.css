@@ -1,7 +1,6 @@
 .hero-section {
   padding-top: 45px;
   padding-bottom: 94px;
-  background-color: var(--body-color);
   overflow-x: hidden;
 }
 
@@ -92,7 +91,7 @@
 @media screen and (min-width: 1310px) {
   .hero-section {
     padding-top: 70px;
-    padding-bottom: 163px;
+    padding-bottom: 164px;
   }
 
   .hero-title {
