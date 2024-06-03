@@ -94,6 +94,7 @@
   font-weight: 900;
   line-height: 0.9;
   text-transform: uppercase;
+  text-wrap: nowrap;
   transform: translateX(calc(-50%)) translateY(-50%);
   transition: transform var(--transition-duration-and-func);
 }
@@ -119,4 +120,52 @@
 .make-donation-btn:is(:hover, :focus) > .make-donation-btn-icon {
   opacity: 1;
   transform: translateX(55px) translateY(-50%);
+}
+
+.goods-list {
+  display: none;
+}
+
+@media screen and (min-width: 1310px) {
+  .goods-mobile {
+    display: none !important;
+  }
+
+  .goods-section {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .goods-title {
+    text-align: center;
+  }
+
+  .goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 85px;
+  }
+
+  .goods-list-item {
+    align-self: stretch;
+    width: calc((100% - 60px) / 4);
+  }
+
+  .goods-list-item.make-donation {
+    align-self: flex-end;
+  }
+
+  .goods-card {
+    gap: 31px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .make-donation-btn {
+    width: 202px;
+    margin-top: 0px;
+  }
 }
