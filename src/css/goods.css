@@ -1,0 +1,70 @@
+.goods-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #9f8ad2;
+}
+
+.goods-title {
+  color: var(--white-color);
+}
+
+.swiper {
+  margin-top: 40px;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.goods-slider-slide {
+  min-height: 100%;
+}
+
+.goods-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 304px;
+  height: 398px;
+  padding: 20px 24px 24px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.goods-card-title-icon {
+  display: block;
+  width: 264px;
+  height: 170px;
+}
+
+.goods-card-title-text {
+  margin-top: 41px;
+  color: var(--white-color);
+  font-family: Akrobat;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.goods-card-desc-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goods-card-desc-wrap:not(:first-child) {
+  margin-top: 8px;
+}
+
+.goods-card-desc-title {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.goods-card-desc-quantity {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
