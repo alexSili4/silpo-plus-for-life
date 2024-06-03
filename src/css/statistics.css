@@ -1,0 +1,150 @@
+.statistics-section {
+  background-color: #37342b;
+  outline: 1px solid greenyellow;
+}
+
+.statistics-section-bg {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  background-color: var(--body-color);
+  border-radius: 0px 0px 30px 30px;
+}
+
+.statistics-goods-text-wrap {
+  flex-shrink: 0;
+  padding: 64px 74px 59px;
+  background-color: #fffef7;
+  border-radius: 30px;
+}
+
+.statistics-goods-text {
+}
+
+.statistics-goods-quantity {
+  display: block;
+  color: var(--accent);
+  font-family: Akrobat;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.statistics-goods-title {
+  display: block;
+  margin-top: 18px;
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.statistics-progress-wrap {
+  margin-top: 16px;
+  padding: 40px 10px 71px;
+  background-color: var(--accent);
+  border-radius: 20px;
+}
+
+.statistics-progress-title {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.statistics-progress-money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-top: 17px;
+}
+
+.statistics-progress-money-text {
+  color: var(--white-color);
+  font-family: Akrobat;
+  font-size: 61px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.statistics-progress-progressbar-container {
+  position: relative;
+  margin-top: 29px;
+}
+
+.statistics-progress-progressbar-wrap {
+  position: relative;
+  background-color: var(--white-color);
+  width: 100%;
+  height: 13px;
+  border-radius: 6.5px;
+  overflow: hidden;
+}
+
+.statistics-progress-progressbar-progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 30%;
+  height: 17px;
+  background-color: var(--primary-color);
+  border-radius: 0px 8.5px 8.5px 0px;
+  transform: translateY(-50%);
+}
+
+.statistics-progress-progressbar-percentage {
+  position: absolute;
+  top: calc(100% + 9px);
+  left: 30%;
+  width: auto;
+  height: auto;
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1310px) {
+  .statistics-section-bg {
+    padding-top: 32px;
+    padding-bottom: 82px;
+    border-radius: 0px 0px 60px 60px;
+  }
+
+  .statistics-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .statistics-goods-text-wrap {
+    width: 304px;
+    padding: 79px 56px 74px;
+  }
+
+  .statistics-progress-wrap {
+    width: 100%;
+    margin-top: 0px;
+    padding: 23px 198px 71px;
+    border-radius: 30px;
+  }
+
+  .statistics-progress-money {
+    gap: 16px;
+    margin-top: 2px;
+  }
+
+  .statistics-progress-money-text {
+    font-size: 110px;
+  }
+
+  .statistics-progress-progressbar-container {
+    margin-top: 12px;
+  }
+}
