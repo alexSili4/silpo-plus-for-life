@@ -1,0 +1,164 @@
+.how-to-support-section {
+  background-color: #9f8ad2;
+}
+
+.how-to-support-section-bg {
+  padding-top: 64px;
+  padding-bottom: 24px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: var(--body-color);
+}
+
+.container {
+}
+
+.how-to-support-container {
+}
+
+.section-title {
+}
+
+.how-to-support-title {
+}
+
+.how-to-support-cards-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.how-to-support-card {
+  position: relative;
+  padding: 40px 30px;
+  border-radius: 20px;
+}
+
+.how-to-support-card.goods {
+  padding-top: 75px;
+  background-color: #876dc7;
+  background-image: url('/icons/howToSupport/card-goods-bg.svg');
+  background-position: center 15px;
+  background-size: 658px 232px;
+  background-repeat: no-repeat;
+}
+
+.how-to-support-card-number {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  color: var(--white-color);
+  font-family: Akrobat;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.how-to-support-card-img-wrap {
+  position: relative;
+  margin-left: 16px;
+}
+
+.how-to-support-card-plus-for-life-img {
+  width: 228px;
+  height: 114px;
+}
+
+.how-to-support-card-silpo-img {
+  position: absolute;
+  top: 86px;
+  left: 101px;
+  width: 163px;
+  height: 91px;
+}
+
+.how-to-support-card-desc {
+  width: 250px;
+  margin-top: 79px;
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.how-to-support-card-desc-link {
+  color: var(--white-color);
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.how-to-support-card.donat {
+  padding-top: 128px;
+  background-color: var(--primary-color);
+  background-image: url('/icons/howToSupport/card-donat-bg.svg');
+  background-position: -47px 52px;
+  background-size: 429px 165px;
+  background-repeat: no-repeat;
+}
+
+.how-to-support-make-donation-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  margin-top: 38px;
+  padding: 0px 17px;
+  border: none;
+  border-radius: 24px;
+  background-color: var(--white-color);
+}
+
+.how-to-support-make-donation-btn-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  color: var(--primary-color);
+  font-family: Akrobat;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
+  transform: translateX(calc(-50%)) translateY(-50%);
+  transition: transform var(--transition-duration-and-func);
+}
+
+.how-to-support-make-donation-btn-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  fill: var(--primary-color);
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  transition: opacity var(--transition-duration-and-func),
+    transform var(--transition-duration-and-func);
+}
+
+.how-to-support-make-donation-btn:is(:hover, :focus)
+  > .how-to-support-make-donation-btn-title {
+  transform: translateX(calc(-50% - 9px)) translateY(-50%);
+}
+
+.how-to-support-make-donation-btn:is(:hover, :focus)
+  > .how-to-support-make-donation-btn-icon {
+  opacity: 1;
+  transform: translateX(calc(-50% + 60px)) translateY(-50%);
+}
+
+.bonuses {
+}
+
+.how-to-support-card-heart-icon {
+}
+
+@media screen and (min-width: 1310px) {
+}
+
+@media screen and (max-width: 1309px) {
+}
