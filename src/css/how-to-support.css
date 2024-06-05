@@ -73,13 +73,16 @@
 }
 
 .how-to-support-card-desc {
-  width: 250px;
-  margin-top: 79px;
   color: var(--white-color);
   font-family: Manrope;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.how-to-support-card-desc.goods {
+  width: 250px;
+  margin-top: 79px;
 }
 
 .how-to-support-card-desc-link {
@@ -151,10 +154,24 @@
   transform: translateX(calc(-50% + 60px)) translateY(-50%);
 }
 
-.bonuses {
+.how-to-support-card.bonuses {
+  padding-top: 29px;
+  background-color: #7a5db6;
+  background-image: url('/icons/howToSupport/card-bonuses-bg.svg');
+  background-position: -40px 0px;
+  background-size: 414px 195px;
+  background-repeat: no-repeat;
 }
 
 .how-to-support-card-heart-icon {
+  display: block;
+  width: 110px;
+  height: 103px;
+  margin-left: 158px;
+}
+
+.how-to-support-card-desc.bonuses {
+  width: 260px;
 }
 
 @media screen and (min-width: 1310px) {
