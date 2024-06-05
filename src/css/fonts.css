@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'Akrobat';
   src: local('Akrobat'),
-    url('/fonts/akrobat/Akrobat-Extrabold.otf') format('truetype');
+    url('/fonts/akrobat/Akrobat-Extrabold.ttf') format('truetype');
   font-weight: 800;
 }
 

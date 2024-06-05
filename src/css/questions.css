@@ -1,0 +1,99 @@
+.questions-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.questions-list-item {
+}
+
+.questions-question-wrap {
+  border-bottom: 1px solid #d9d9d6;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  transition: padding-bottom var(--transition-duration-and-func);
+}
+
+.questions-question-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.questions-question-btn-title {
+  color: #37342b;
+  font-family: Akrobat;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.question-btn-icon-wrap {
+  position: relative;
+}
+
+.question-btn-icon {
+  flex-shrink: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-color);
+  transition: opacity var(--transition-duration-and-func),
+    transform var(--transition-duration-and-func);
+}
+
+.question-btn-icon-hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.questions-question-btn:is(:hover, :focus) .question-btn-icon-show {
+  transform: rotate(90deg);
+}
+
+.questions-answer {
+  max-height: 100px;
+  margin-top: 8px;
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  overflow-y: hidden;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform var(--transition-duration-and-func),
+    max-height var(--transition-duration-and-func),
+    margin-top var(--transition-duration-and-func);
+}
+
+.questions-question-wrap.hidden-desc .questions-answer {
+  max-height: 0px;
+  margin-top: 0px;
+  transform: scaleY(0);
+}
+
+.questions-question-wrap:not(.hidden-desc) {
+  padding-bottom: 20px;
+}
+
+.questions-question-wrap:not(.hidden-desc) .question-btn-icon-show {
+  opacity: 0;
+}
+
+.questions-question-wrap:not(.hidden-desc) .question-btn-icon-hide {
+  opacity: 1;
+}
