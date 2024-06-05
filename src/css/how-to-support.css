@@ -37,8 +37,8 @@
 .how-to-support-card.goods {
   padding-top: 75px;
   background-color: #876dc7;
-  background-image: url('/icons/howToSupport/card-goods-bg.svg');
-  background-position: center 15px;
+  background-image: url('/icons/howToSupport/card-goods-mobile-bg.svg');
+  background-position: -154px 15px;
   background-size: 658px 232px;
   background-repeat: no-repeat;
 }
@@ -94,9 +94,9 @@
 .how-to-support-card.donat {
   padding-top: 128px;
   background-color: var(--primary-color);
-  background-image: url('/icons/howToSupport/card-donat-bg.svg');
-  background-position: -47px 52px;
-  background-size: 429px 165px;
+  background-image: url('/icons/howToSupport/card-donat-mobile-bg.svg');
+  background-position: -35px 52px;
+  background-size: 399px 165px;
   background-repeat: no-repeat;
 }
 
@@ -157,9 +157,9 @@
 .how-to-support-card.bonuses {
   padding-top: 29px;
   background-color: #7a5db6;
-  background-image: url('/icons/howToSupport/card-bonuses-bg.svg');
-  background-position: -40px 0px;
-  background-size: 414px 195px;
+  background-image: url('/icons/howToSupport/card-bonuses-mobile-bg.svg');
+  background-position: -18px -20px;
+  background-size: 384px 241px;
   background-repeat: no-repeat;
 }
 
@@ -167,7 +167,7 @@
   display: block;
   width: 110px;
   height: 103px;
-  margin-left: 158px;
+  margin-left: auto;
 }
 
 .how-to-support-card-desc.bonuses {
@@ -175,6 +175,78 @@
 }
 
 @media screen and (min-width: 1310px) {
+  .how-to-support-section-bg {
+    padding-top: 116px;
+    padding-bottom: 80px;
+    border-radius: 60px 60px 0px 0px;
+  }
+
+  .how-to-support-cards-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 56px;
+  }
+
+  .how-to-support-card {
+    border-radius: 30px;
+  }
+
+  .how-to-support-card.goods {
+    flex-shrink: 0;
+    padding: 159px 281px 40px 40px;
+    background-image: url('/icons/howToSupport/card-goods-desk-bg.svg');
+    background-position: -10px 15px;
+  }
+
+  .how-to-support-card-number.goods {
+    top: 40px;
+    left: 40px;
+  }
+
+  .how-to-support-card-img-wrap {
+    position: absolute;
+    top: 37px;
+    left: 323px;
+    margin-left: 0px;
+  }
+
+  .how-to-support-card-plus-for-life-img {
+    width: 251px;
+    height: 125px;
+  }
+
+  .how-to-support-card-silpo-img {
+    top: 94px;
+    left: 111px;
+    width: 179px;
+    height: 101px;
+  }
+
+  .how-to-support-card-desc.goods {
+    width: 307px;
+    margin-top: 0px;
+  }
+
+  .how-to-support-card.donat {
+    background-image: url('/icons/howToSupport/card-donat-desk-bg.svg');
+    background-position: -13px 52px;
+    background-size: 320px 163px;
+  }
+
+  .how-to-support-make-donation-btn {
+    width: 244px;
+  }
+
+  .how-to-support-card.bonuses {
+    background-image: url('/icons/howToSupport/card-bonuses-desk-bg.svg');
+    background-position: -18px 39px;
+    background-size: 347px 154px;
+  }
+
+  .how-to-support-card-desc.bonuses {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 1309px) {

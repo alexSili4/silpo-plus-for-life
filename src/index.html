@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <load src="/partials/header.html" />
@@ -15,7 +19,29 @@
       <load src="/partials/statistics.html" />
       <load src="/partials/goods.html" />
       <load src="/partials/how-to-support.html" />
+      <load src="/partials/first-results.html" />
+      <load src="/partials/questions.html" />
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/js/main.js"></script>
+
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      const swiper2 = new Swiper('.mySwiper2', {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.first-results-slider-button-next',
+          prevEl: '.first-results-slider-button-prev',
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
   </body>
 </html>

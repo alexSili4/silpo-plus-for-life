@@ -1,9 +1,7 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 
-const swiperClassName = '.swiper';
-
-const swiper = new Swiper(swiperClassName, {
+const goodsSlider = new Swiper('.goods-slider', {
   direction: 'horizontal',
   spaceBetween: -23,
   speed: 800,
