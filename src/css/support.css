@@ -1,0 +1,333 @@
+.support-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-image: url('../icons/support/support-left-hand-mobile.svg'),
+    url('../icons/support/support-right-hand-mobile.svg');
+  background-size: 590px 354px, 610px 431px;
+  background-position: calc(50% - 295px + 55px) 220px,
+    calc(50% + 305px - 25px) 200px;
+  background-repeat: no-repeat;
+}
+
+.support-title {
+  color: #37342b;
+  font-family: Akrobat;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.support-make-donation-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+  margin-top: 271px;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--accent);
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.support-make-donation-btn-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  color: var(--white-color);
+  font-family: Akrobat;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
+  transform: translateX(calc(-50%)) translateY(-50%);
+  transition: transform var(--transition-duration-and-func);
+}
+
+.support-make-donation-btn-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  fill: var(--white-color);
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  transition: opacity var(--transition-duration-and-func),
+    transform var(--transition-duration-and-func);
+}
+
+.support-make-donation-btn:is(:hover, :focus) {
+  background-color: #f04a4a;
+}
+
+.support-make-donation-btn:is(:hover, :focus)
+  > .support-make-donation-btn-title {
+  transform: translateX(calc(-50% - 9px)) translateY(-50%);
+}
+
+.support-make-donation-btn:is(:hover, :focus)
+  > .support-make-donation-btn-icon {
+  opacity: 1;
+  transform: translateX(calc(-50% + 67px)) translateY(-50%);
+}
+
+.support-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.support-cards-list-item {
+}
+
+.support-card {
+  background-color: var(--white-color);
+  border-radius: 20px;
+}
+
+.support-card.silpo-helps {
+  background-image: url('../icons/support/silpo-helps-mobile-bg.svg');
+  background-size: 658px 232px;
+  background-position: -146px 30px;
+  background-repeat: no-repeat;
+}
+
+.support-card-silpo-helps-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 67px 43px 101px;
+}
+
+.support-card-silpo-helps-link-title {
+  color: #7ac76b;
+  font-family: Akrobat;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.support-card-silpo-helps-link-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #7ac76b;
+  border-radius: 50%;
+}
+
+.support-card-silpo-helps-link-icon {
+  width: 35px;
+  height: 35px;
+  fill: var(--white-color);
+}
+
+.support-card.heart {
+  position: relative;
+  height: 280px;
+  background-image: url('../icons/support/heart-silpo-mobile-bg.svg');
+  background-size: 253px 210px;
+  background-repeat: no-repeat;
+  background-position: center 35px;
+}
+
+.support-card-hand-icon.left-hand-mobile {
+  position: absolute;
+  top: 42px;
+  right: 238px;
+  display: block;
+  width: 188px;
+  height: 107px;
+  transition: right var(--transition-duration-and-func);
+}
+
+.support-card-hand-icon.right-hand-mobile {
+  position: absolute;
+  top: 65px;
+  left: 202px;
+  display: block;
+  width: 163px;
+  height: 137px;
+  transition: left var(--transition-duration-and-func);
+}
+
+@media screen and (min-width: 1310px) {
+  .support-section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-image: url('../icons/support/support-left-hand-desk.svg'),
+      url('../icons/support/support-right-hand-desk.svg');
+    background-size: 1010px 583px, 1004px 708px;
+    background-position: calc(50% - 505px + 210px) 205px,
+      calc(50% + 502px + 79px) 177px;
+  }
+
+  .support-title {
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  .support-make-donation-btn {
+    width: 202px;
+    height: 62px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 31px;
+  }
+
+  .support-make-donation-btn-title {
+    font-family: Akrobat;
+    font-size: 16px;
+    text-wrap: nowrap;
+  }
+
+  .support-make-donation-btn:is(:hover, :focus)
+    > .support-make-donation-btn-icon {
+    opacity: 1;
+    transform: translateX(calc(-50% + 60px)) translateY(-50%);
+  }
+
+  .support-cards-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    margin-top: 310px;
+  }
+
+  .support-card {
+    background-color: var(--white-color);
+    border-radius: 30px;
+  }
+
+  .support-card.silpo-helps {
+    background-image: url('../icons/support/silpo-helps-desk-bg.svg');
+    background-size: 658px 232px;
+    background-position: -10px 15px;
+    background-repeat: no-repeat;
+  }
+
+  .support-card-silpo-helps-link {
+    flex-direction: row;
+    padding: 112px 107px;
+  }
+
+  .support-card-silpo-helps-link-title {
+    color: #7ac76b;
+    font-family: Akrobat;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .support-card-silpo-helps-link-icon {
+    transition: transform var(--transition-duration-and-func);
+  }
+
+  .support-card-silpo-helps-link:is(:hover, :focus)
+    .support-card-silpo-helps-link-icon {
+    transform: rotate(45deg);
+  }
+
+  .support-card-silpo-helps-link-icon.next {
+    display: none;
+  }
+
+  .support-card.empty {
+    flex-shrink: 0;
+    width: 304px;
+    height: 100%;
+    background-image: url('../icons/support/empty-card-bg.svg');
+    background-size: 345px 216px;
+    background-position: -30px 32px;
+    background-repeat: no-repeat;
+  }
+
+  .support-card.heart {
+    flex-shrink: 0;
+    width: 304px;
+    background-image: url('../icons/support/heart-silpo-mobile-bg.svg');
+    background-size: 232px 210px;
+    background-repeat: no-repeat;
+    background-position: center 35px;
+    overflow: hidden;
+  }
+
+  .support-card-hand-icon.left-hand-mobile {
+    display: none;
+  }
+
+  .support-card-hand-icon.right-hand-mobile {
+    display: none;
+  }
+
+  .support-card-hand-icon.left-hand-desk {
+    position: absolute;
+    top: 42px;
+    right: 210px;
+    display: block;
+    width: 173px;
+    height: 107px;
+    transition: right var(--transition-duration-and-func),
+      top var(--transition-duration-and-func),
+      transform var(--transition-duration-and-func);
+  }
+
+  .support-card-hand-icon.right-hand-desk {
+    position: absolute;
+    top: 61px;
+    left: 166px;
+    display: block;
+    width: 204px;
+    height: 162px;
+    transition: left var(--transition-duration-and-func);
+  }
+
+  .support-cards-list-item:has(
+      .support-card-silpo-helps-link:is(:hover, :focus)
+    )
+    ~ .support-cards-list-item:has(.support-card.heart)
+    .support-card-hand-icon.left-hand-desk {
+    right: 171px;
+  }
+
+  .support-cards-list-item:has(
+      .support-card-silpo-helps-link:is(:hover, :focus)
+    )
+    ~ .support-cards-list-item:has(.support-card.heart)
+    .support-card-hand-icon.right-hand-desk {
+    top: 78px;
+    left: 144px;
+    transform: rotate(13.25deg);
+    transform-origin: top right;
+  }
+}
+
+@media screen and (max-width: 1309px) {
+  .support-cards-list-item.desk {
+    display: none;
+  }
+
+  .support-card-silpo-helps-link-icon.next-arrow {
+    display: none;
+  }
+
+  .support-card-hand-icon.left-hand-desk {
+    display: none;
+  }
+
+  .support-card-hand-icon.right-hand-desk {
+    display: none;
+  }
+}
