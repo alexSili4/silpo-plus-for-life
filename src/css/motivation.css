@@ -1,0 +1,24 @@
+.motivation-section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.motivation-video {
+  display: block;
+  width: 100%;
+  height: 191px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1310px) {
+  .motivation-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .motivation-video {
+    height: 718px;
+    border-radius: 30px;
+  }
+}

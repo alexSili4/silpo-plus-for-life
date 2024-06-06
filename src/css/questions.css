@@ -14,8 +14,7 @@
 
 .questions-question-wrap {
   border-bottom: 1px solid #d9d9d6;
-  padding-top: 20px;
-  padding-bottom: 4px;
+  padding: 20px 8px 4px;
   transition: padding-bottom var(--transition-duration-and-func);
 }
 
@@ -66,7 +65,7 @@
 
 .questions-answer {
   max-height: 100px;
-  margin-top: 8px;
+  margin-top: 20px;
   color: #37342b;
   font-family: Manrope;
   font-size: 16px;
@@ -96,4 +95,29 @@
 
 .questions-question-wrap:not(.hidden-desc) .question-btn-icon-hide {
   opacity: 1;
+}
+
+@media screen and (min-width: 1310px) {
+  .questions-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .questions-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .questions-list {
+    width: 628px;
+    margin-top: 0px;
+  }
+
+  .questions-question-wrap {
+    padding: 20px 24px 4px;
+  }
+
+  .questions-question-btn-title {
+    line-height: 0.9;
+  }
 }
