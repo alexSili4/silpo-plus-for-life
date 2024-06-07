@@ -1,7 +1,7 @@
 .hero-section {
   padding-top: 45px;
   padding-bottom: 94px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .hero-title {

@@ -1,0 +1,126 @@
+.footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #fffef7;
+}
+
+.container {
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link-icon {
+  width: 139px;
+  height: 41px;
+}
+
+.footer-social-links-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.footer-social-links-list-item {
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.footer-social-link:is(:hover, :focus) {
+  background-color: var(--primary-color);
+}
+
+.footer-social-link-icon {
+  fill: var(--white-color);
+}
+
+.footer-social-link-icon.facebook {
+  width: 12px;
+  height: 23px;
+}
+
+.footer-social-link-icon.telegram {
+  width: 19px;
+  height: 17px;
+}
+
+.footer-social-link-icon.instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.footer-text-silpo {
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.footer-text-sun {
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1310px) {
+  .footer {
+    padding-top: 71px;
+    padding-bottom: 71px;
+    background-color: #fffef7;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-link-icon {
+    width: 152px;
+    height: 44px;
+  }
+
+  .footer-social-links-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 0px;
+  }
+
+  .footer-social-link {
+    width: 44px;
+    height: 44px;
+  }
+
+  .footer-text-wrap {
+    align-items: flex-end;
+    gap: 8px;
+    margin-top: 0px;
+  }
+}

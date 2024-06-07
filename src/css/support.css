@@ -1,12 +1,11 @@
 .support-section {
   padding-top: 24px;
   padding-bottom: 24px;
-  background-image: url('../icons/support/support-left-hand-mobile.svg'),
-    url('../icons/support/support-right-hand-mobile.svg');
-  background-size: 590px 354px, 610px 431px;
-  background-position: calc(50% - 295px + 55px) 220px,
-    calc(50% + 305px - 25px) 200px;
-  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.support-container {
+  position: relative;
 }
 
 .support-title {
@@ -78,6 +77,8 @@
 }
 
 .support-cards-list {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -160,15 +161,29 @@
   transition: left var(--transition-duration-and-func);
 }
 
+.support-section-bg-icon {
+  position: absolute;
+  display: block;
+}
+
+.support-big-left-hand-mobile-icon {
+  top: 200px;
+  right: 130px;
+  width: 620px;
+  height: 354px;
+}
+
+.support-big-right-hand-mobile-icon {
+  top: 183px;
+  left: 155px;
+  width: 610px;
+  height: 431px;
+}
+
 @media screen and (min-width: 1310px) {
   .support-section {
     padding-top: 100px;
     padding-bottom: 80px;
-    background-image: url('../icons/support/support-left-hand-desk.svg'),
-      url('../icons/support/support-right-hand-desk.svg');
-    background-size: 1010px 583px, 1004px 708px;
-    background-position: calc(50% - 505px + 210px) 205px,
-      calc(50% + 502px + 79px) 177px;
   }
 
   .support-title {
@@ -312,6 +327,28 @@
     transform: rotate(13.25deg);
     transform-origin: top right;
   }
+
+  .support-big-left-hand-desk-icon {
+    top: 100px;
+    right: 460px;
+    width: 1010px;
+    height: 583px;
+  }
+
+  .support-big-right-hand-desk-icon {
+    top: 76px;
+    left: 717px;
+    width: 1004px;
+    height: 708px;
+  }
+
+  .support-big-left-hand-mobile-icon {
+    display: none;
+  }
+
+  .support-big-right-hand-mobile-icon {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1309px) {
@@ -328,6 +365,14 @@
   }
 
   .support-card-hand-icon.right-hand-desk {
+    display: none;
+  }
+
+  .support-big-right-hand-desk-icon {
+    display: none;
+  }
+
+  .support-big-left-hand-desk-icon {
     display: none;
   }
 }

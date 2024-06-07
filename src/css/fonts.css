@@ -15,6 +15,13 @@
 @font-face {
   font-family: 'Manrope';
   src: local('Manrope'),
+    url('/fonts/manrope/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope'),
     url('/fonts/manrope/Manrope-Regular.ttf') format('truetype');
   font-weight: 400;
 }
