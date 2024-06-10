@@ -138,10 +138,10 @@
 
   .hero-left-hand-desk-icon {
     position: absolute;
-    top: 209px;
+    top: 110px;
     right: 450px;
-    width: 1056px;
-    height: 659px;
+    width: 1342px;
+    height: 771px;
     display: block;
   }
 
@@ -154,7 +154,7 @@
     top: 98px;
     left: 477px;
     display: block;
-    width: 930px;
-    height: 484px;
+    width: 1278px;
+    height: 514px;
   }
 }
