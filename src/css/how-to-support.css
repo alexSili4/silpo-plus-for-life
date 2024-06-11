@@ -59,12 +59,13 @@
   margin-left: 16px;
 }
 
-.how-to-support-card-plus-for-life-img {
+.how-to-support-card-plus-for-life-icon {
+  display: block;
   width: 228px;
   height: 114px;
 }
 
-.how-to-support-card-silpo-img {
+.how-to-support-card-silpo-icon {
   position: absolute;
   top: 86px;
   left: 101px;
@@ -211,12 +212,12 @@
     margin-left: 0px;
   }
 
-  .how-to-support-card-plus-for-life-img {
+  .how-to-support-card-plus-for-life-icon {
     width: 251px;
     height: 125px;
   }
 
-  .how-to-support-card-silpo-img {
+  .how-to-support-card-silpo-icon {
     top: 94px;
     left: 111px;
     width: 179px;
