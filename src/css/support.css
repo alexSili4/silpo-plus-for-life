@@ -105,7 +105,7 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 67px 43px 101px;
+  padding: 67px 36px 101px;
 }
 
 .support-card-silpo-helps-link-title {
@@ -178,6 +178,96 @@
   left: 155px;
   width: 610px;
   height: 431px;
+}
+
+.support-contacts-wrap {
+  margin-top: 16px;
+  border-radius: 30px;
+  padding: 40px 30px;
+  background-color: #fffef7;
+}
+
+.support-contacts-title {
+  color: var(--accent);
+  font-family: Akrobat;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.support-contacts-text-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.support-contacts-text {
+  font-family: Manrope;
+  color: #37342b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.support-contacts-text-email-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.support-contacts-email-link {
+  align-self: flex-end;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  overflow: hidden;
+}
+.support-contacts-email-link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: var(--white-color);
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform var(--transition-duration-and-func);
+}
+
+.support-nav-arrow-icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform var(--transition-duration-and-func);
+}
+
+.support-nav-arrow-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: var(--white-color);
+}
+
+.support-contacts-email-link:is(:hover, :focus)
+  .support-contacts-email-link-icon {
+  transform: translateX(100%) translateY(-50%);
+}
+
+.support-contacts-email-link:is(:hover, :focus) .support-nav-arrow-icon-wrap {
+  transform: translateX(0%);
 }
 
 @media screen and (min-width: 1310px) {
@@ -348,6 +438,34 @@
 
   .support-big-right-hand-mobile-icon {
     display: none;
+  }
+
+  .support-contacts-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 40px;
+    padding-left: 107px;
+  }
+
+  .support-contacts-title {
+    flex-shrink: 0;
+  }
+
+  .support-contacts-text-wrap {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 0px;
+  }
+
+  .support-contacts-text {
+    width: 510px;
+  }
+
+  .support-contacts-email-link {
+    align-self: center;
+    flex-shrink: 0;
   }
 }
 

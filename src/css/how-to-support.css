@@ -35,11 +35,12 @@
 }
 
 .how-to-support-card.goods {
-  padding-top: 75px;
+  padding-top: 267px;
   background-color: #876dc7;
-  background-image: url('/icons/howToSupport/card-goods-mobile-bg.svg');
-  background-position: -154px 15px;
-  background-size: 658px 232px;
+  background-image: url('/icons/howToSupport/card-goods-mobile-logos-bg.svg'),
+    url('/icons/howToSupport/card-goods-mobile-bg.svg');
+  background-position: 45px 72px, -154px 15px;
+  background-size: 251px 151px, 658px 232px;
   background-repeat: no-repeat;
 }
 
@@ -83,7 +84,6 @@
 
 .how-to-support-card-desc.goods {
   width: 250px;
-  margin-top: 79px;
 }
 
 .how-to-support-card-desc-link {
@@ -158,10 +158,6 @@
 .how-to-support-card.bonuses {
   padding-top: 29px;
   background-color: #7a5db6;
-  background-image: url('/icons/howToSupport/card-bonuses-mobile-bg.svg');
-  background-position: -18px -20px;
-  background-size: 384px 241px;
-  background-repeat: no-repeat;
 }
 
 .how-to-support-card-heart-icon {
@@ -175,6 +171,20 @@
   width: 260px;
 }
 
+.how-to-support-card.collection {
+  padding-top: 213px;
+  background-color: #947dcd;
+  background-image: url('/icons/howToSupport/card-collection-mobile-bg-shadow.svg.svg'),
+    url('/icons/howToSupport/card-collection-mobile-bg.svg.svg');
+  background-position: 89px -1px, -108px 15px;
+  background-size: 210px 214px, 733px 189px;
+  background-repeat: no-repeat;
+}
+
+.how-to-support-card-desc-additional-link {
+  color: currentColor;
+}
+
 @media screen and (min-width: 1310px) {
   .how-to-support-section-bg {
     padding-top: 116px;
@@ -186,6 +196,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
     margin-top: 56px;
   }
 
@@ -195,9 +206,12 @@
 
   .how-to-support-card.goods {
     flex-shrink: 0;
-    padding: 159px 281px 40px 40px;
-    background-image: url('/icons/howToSupport/card-goods-desk-bg.svg');
-    background-position: -10px 15px;
+    width: 844px;
+    padding: 186px 365px 40px 40px;
+    background-image: url('/icons/howToSupport/card-goods-desk-logos-bg.svg'),
+      url('/icons/howToSupport/card-goods-desk-bg.svg');
+    background-size: 264px 159px, 907px 299px;
+    background-position: 508px 61px, -25px -18px;
   }
 
   .how-to-support-card-number.goods {
@@ -225,14 +239,14 @@
   }
 
   .how-to-support-card-desc.goods {
-    width: 307px;
-    margin-top: 0px;
+    width: 439px;
   }
 
   .how-to-support-card.donat {
+    width: 412px;
     background-image: url('/icons/howToSupport/card-donat-desk-bg.svg');
-    background-position: -13px 52px;
-    background-size: 320px 163px;
+    background-position: -28px 30px;
+    background-size: 455px 207px;
   }
 
   .how-to-support-make-donation-btn {
@@ -240,13 +254,26 @@
   }
 
   .how-to-support-card.bonuses {
-    background-image: url('/icons/howToSupport/card-bonuses-desk-bg.svg');
-    background-position: -18px 39px;
-    background-size: 347px 154px;
+    width: 412px;
   }
 
   .how-to-support-card-desc.bonuses {
     width: auto;
+  }
+
+  .how-to-support-card.collection {
+    width: 844px;
+    padding-top: 159px;
+    background-color: #947dcd;
+    background-image: url('/icons/howToSupport/card-collection-desk-bg-shadow.svg.svg'),
+      url('/icons/howToSupport/card-collection-desk-bg.svg.svg');
+    background-position: 549px -1px, -7px 41px;
+    background-size: 240px 245px, 878px 219px;
+    background-repeat: no-repeat;
+  }
+
+  .how-to-support-card-desc.collection {
+    width: 505px;
   }
 }
 

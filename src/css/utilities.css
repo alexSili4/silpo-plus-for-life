@@ -51,7 +51,7 @@ body {
 
 .container {
   position: relative;
-  width: 372px;
+  width: 375px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -65,6 +65,10 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
+}
+
+.event-none {
+  pointer-events: none;
 }
 
 @media screen and (min-width: 1310px) {
