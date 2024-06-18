@@ -255,6 +255,7 @@
 
   .how-to-support-card.bonuses {
     width: 412px;
+    padding-top: 39px;
   }
 
   .how-to-support-card-desc.bonuses {
@@ -274,6 +275,10 @@
 
   .how-to-support-card-desc.collection {
     width: 505px;
+  }
+
+  .how-to-support-card-desc.bonuses {
+    margin-top: 17px;
   }
 }
 
