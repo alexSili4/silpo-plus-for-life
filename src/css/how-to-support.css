@@ -174,11 +174,23 @@
 .how-to-support-card.collection {
   padding-top: 213px;
   background-color: #947dcd;
-  background-image: url('/icons/howToSupport/card-collection-mobile-bg-shadow.svg.svg'),
-    url('/icons/howToSupport/card-collection-mobile-bg.svg.svg');
+  background-image: url('/icons/howToSupport/card-collection-mobile-bg-shadow.svg'),
+    url('/icons/howToSupport/card-collection-mobile-bg.svg');
   background-position: 89px -1px, -108px 15px;
   background-size: 210px 214px, 733px 189px;
   background-repeat: no-repeat;
+}
+
+.how-to-support-label {
+  position: absolute;
+  left: 137px;
+  top: 92px;
+  width: 78px;
+  height: 78px;
+  background-image: url('/icons/howToSupport/basket-plus-for-life.svg');
+  background-size: 78px 78px;
+  background-repeat: no-repeat;
+  transform: rotate(-17.32deg);
 }
 
 .how-to-support-card-desc-additional-link {
@@ -266,11 +278,23 @@
     width: 844px;
     padding-top: 159px;
     background-color: #947dcd;
-    background-image: url('/icons/howToSupport/card-collection-desk-bg-shadow.svg.svg'),
-      url('/icons/howToSupport/card-collection-desk-bg.svg.svg');
+    background-image: url('/icons/howToSupport/card-collection-desk-bg-shadow.svg'),
+      url('/icons/howToSupport/card-collection-desk-bg.svg');
     background-position: 549px -1px, -7px 41px;
     background-size: 240px 245px, 878px 219px;
     background-repeat: no-repeat;
+  }
+
+  .how-to-support-label {
+    position: absolute;
+    left: 605px;
+    top: 107px;
+    width: 89px;
+    height: 89px;
+    background-image: url('../icons/howToSupport/basket-plus-for-life.svg');
+    background-size: 89px 89px;
+    background-repeat: no-repeat;
+    transform: rotate(-17.32deg);
   }
 
   .how-to-support-card-desc.collection {
