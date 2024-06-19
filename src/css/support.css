@@ -1,7 +1,6 @@
 .support-section {
   padding-top: 24px;
   padding-bottom: 24px;
-  overflow: hidden;
 }
 
 .support-container {
@@ -418,16 +417,30 @@
     transform-origin: top right;
   }
 
-  .support-big-left-hand-desk-icon {
+  .support-big-left-hand-desk-icon-wrap {
+    position: absolute;
     top: 110px;
     right: 460px;
-    width: 1638px;
+    max-height: 1000px;
+    overflow: hidden;
+  }
+
+  .support-big-left-hand-desk-icon {
+    position: static;
+    width: 1648px;
     height: 1410px;
   }
 
-  .support-big-right-hand-desk-icon {
+  .support-big-right-hand-desk-icon-wrap {
+    position: absolute;
     top: 76px;
     left: 717px;
+    max-height: 1000px;
+    overflow: hidden;
+  }
+
+  .support-big-right-hand-desk-icon {
+    position: static;
     width: 1567px;
     height: 1307px;
   }
@@ -492,5 +505,9 @@
 
   .support-big-left-hand-desk-icon {
     display: none;
+  }
+
+  .support-section {
+    overflow: hidden;
   }
 }

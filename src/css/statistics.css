@@ -89,7 +89,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  width: 4%;
+  width: 6%;
   height: 17px;
   background-color: var(--primary-color);
   border-radius: 0px 8.5px 8.5px 0px;
@@ -99,7 +99,7 @@
 .statistics-progress-progressbar-percentage {
   position: absolute;
   top: calc(100% + 9px);
-  left: 4%;
+  left: 6%;
   width: auto;
   height: auto;
   color: var(--white-color);
