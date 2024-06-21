@@ -14,17 +14,16 @@
 
 .questions-question-wrap {
   border-bottom: 1px solid #d9d9d6;
-  padding: 20px 8px 4px;
   transition: padding-bottom var(--transition-duration-and-func);
 }
 
 .questions-question-btn {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   border: none;
-  padding: 0;
+  padding: 20px 8px 4px;
   background-color: transparent;
 }
 
@@ -57,44 +56,45 @@
   top: 0;
   left: 0;
   opacity: 0;
+  transform: rotate(-90deg);
 }
 
-.questions-question-btn:is(:hover, :focus) .question-btn-icon-show {
-  transform: rotate(90deg);
+.questions-answer-wrap {
+  max-height: 120px;
+  padding-left: 8px;
+  padding-right: 8px;
+  overflow: hidden;
+  transition: max-height 400ms ease-out;
+}
+
+.questions-answer-wrap.big {
+  max-height: 320px;
 }
 
 .questions-answer {
-  max-height: 1000px;
-  margin-top: 20px;
   color: #37342b;
   font-family: Manrope;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  overflow-y: hidden;
-  transform: scaleY(1);
-  transform-origin: top;
-  transition: transform var(--transition-duration-and-func),
-    max-height var(--transition-duration-and-func),
-    margin-top var(--transition-duration-and-func);
 }
 
-.questions-question-wrap.hidden-desc .questions-answer {
+.questions-question-wrap.hidden-desc .questions-answer-wrap {
   max-height: 0px;
-  margin-top: 0px;
-  transform: scaleY(0);
 }
 
 .questions-question-wrap:not(.hidden-desc) {
-  padding-bottom: 20px;
+  padding-bottom: 4px;
 }
 
 .questions-question-wrap:not(.hidden-desc) .question-btn-icon-show {
+  transform: rotate(90deg);
   opacity: 0;
 }
 
 .questions-question-wrap:not(.hidden-desc) .question-btn-icon-hide {
   opacity: 1;
+  transform: rotate(0deg);
 }
 
 @media screen and (min-width: 1310px) {
@@ -113,11 +113,21 @@
     margin-top: 0px;
   }
 
-  .questions-question-wrap {
-    padding: 20px 24px 4px;
+  .questions-answer-wrap {
+    max-height: 70px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .questions-question-btn {
+    padding: 20px 24px 20px;
   }
 
   .questions-question-btn-title {
     line-height: 0.9;
+  }
+
+  .questions-question-wrap:not(.hidden-desc) {
+    padding-bottom: 20px;
   }
 }
