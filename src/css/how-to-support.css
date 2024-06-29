@@ -92,6 +92,21 @@
   text-decoration: underline;
 }
 
+.how-to-support-card {
+}
+.silpo-bank {
+}
+.how-to-support-card-number {
+}
+.how-to-support-card-silpo-bank-wrap {
+}
+.how-to-support-card-silpo-bank-icon {
+}
+.how-to-support-card-silpo-bank-title {
+}
+.how-to-support-card-desc {
+}
+
 .how-to-support-card.donat {
   padding-top: 128px;
   background-color: var(--primary-color);
