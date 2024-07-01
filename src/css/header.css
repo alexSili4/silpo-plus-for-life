@@ -82,7 +82,7 @@
   transition: fill var(--transition-duration-and-func);
 }
 
-.menu-link:is(:hover, :focus) .menu-link-title {
+.menu-link:is(:hover, :focus) {
   color: var(--accent);
 }
 

@@ -437,6 +437,7 @@
     left: 717px;
     max-height: 1000px;
     overflow: hidden;
+    pointer-events: none;
   }
 
   .support-big-right-hand-desk-icon {
