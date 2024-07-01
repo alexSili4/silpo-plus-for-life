@@ -1,0 +1,185 @@
+body:has(.goods-backdrop-wrap:not(.is-hidden)) {
+  overflow: hidden;
+}
+
+.goods-backdrop-wrap {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  transition: opacity var(--transition-duration-and-func),
+    visibility var(--transition-duration-and-func);
+}
+
+.goods-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 28px;
+  background-color: #f6f4ee;
+}
+
+.goods-modal-win {
+  position: relative;
+  height: 100%;
+  background-color: #f6f4ee;
+}
+
+.goods-modal-win-close-btn {
+  position: absolute;
+  top: 4px;
+  right: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.goods-modal-win-close-btn-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: #37342b;
+  transition: fill var(--transition-duration-and-func);
+}
+
+.goods-modal-win-close-btn:is(:hover, :focus) .goods-modal-win-close-btn-icon {
+  fill: var(--accent);
+}
+
+.goods-modal-win-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 375px;
+  padding-top: 68px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.goods-modal-win-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.goods-modal-win-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+.goods-modal-win-title {
+  color: #37342b;
+  font-family: Akrobat;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.goods-modal-win-desc {
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.goods-modal-win-sections-wrap {
+}
+
+.goods-modal-win-sections-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods-modal-win-sections-list-item {
+  width: 50%;
+}
+
+.goods-modal-win-section-name-wrap {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  outline: 1px solid greenyellow;
+}
+
+.goods-modal-win-section-title {
+  color: #37342b;
+  font-family: Akrobat;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.goods-modal-win-characteristics-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.goods-modal-win-characteristics-list-item {
+}
+
+.goods-modal-win-characteristics-title {
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.goods-modal-win-explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.goods-modal-win-explanation-title {
+  color: #37342b;
+  font-family: Akrobat;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.goods-modal-win-explanation-desc {
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.goods-modal-win-media-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.goods-modal-win-img-wrap {
+  width: 343px;
+  height: 245px;
+}
+
+.goods-modal-win-img {
+  object-fit: cover;
+}
+
+.goods-modal-win-video-wrap {
+  width: 343px;
+  height: 193px;
+}
+
+.goods-modal-win-video {
+  width: 100%;
+  height: 100%;
+}
