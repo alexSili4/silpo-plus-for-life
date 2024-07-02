@@ -267,10 +267,28 @@
 }
 
 .donation-form-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 56px;
+  padding: 0;
+  border: none;
+  border-radius: 28px;
+  background-color: var(--accent);
   margin-top: 8px;
 }
 
 .donation-form-submit-btn-title {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 700;
 }
+
 .donation-form-submit-btn-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
 }
