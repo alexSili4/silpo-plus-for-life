@@ -1,8 +1,8 @@
-body:has(.goods-backdrop-wrap:not(.is-hidden)) {
+body:has(.goods-modal-win-backdrop-wrap:not(.is-hidden)) {
   overflow: hidden;
 }
 
-.goods-backdrop-wrap {
+.goods-modal-win-backdrop-wrap {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -14,7 +14,7 @@ body:has(.goods-backdrop-wrap:not(.is-hidden)) {
     visibility var(--transition-duration-and-func);
 }
 
-.goods-backdrop {
+.goods-modal-win-backdrop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +64,7 @@ body:has(.goods-backdrop-wrap:not(.is-hidden)) {
 }
 
 .goods-modal-win-content-wrap {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -93,6 +94,9 @@ body:has(.goods-backdrop-wrap:not(.is-hidden)) {
 }
 
 .goods-modal-win-sections-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .goods-modal-win-sections-list {
@@ -105,11 +109,31 @@ body:has(.goods-backdrop-wrap:not(.is-hidden)) {
 }
 
 .goods-modal-win-section-name-wrap {
+  position: relative;
   display: block;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-bottom: 1px solid rgb(224, 224, 224);
   cursor: pointer;
-  outline: 1px solid greenyellow;
+}
+
+.goods-modal-win-section-name-wrap:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: transparent;
+  transform: translateY(calc(50% + 0.5px));
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.goods-modal-win-section-name-wrap:has(
+    input:is(:hover, :focus, :checked)
+  ):after {
+  background-color: var(--accent);
 }
 
 .goods-modal-win-section-title {
@@ -120,13 +144,18 @@ body:has(.goods-backdrop-wrap:not(.is-hidden)) {
   text-transform: uppercase;
 }
 
+.goods-modal-win-target-section.js-characteristics
+  > *:not(.js-characteristics) {
+  display: none;
+}
+
+.goods-modal-win-target-section.js-documents > *:not(.js-documents) {
+  display: none;
+}
+
 .goods-modal-win-characteristics-list {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
-}
-
-.goods-modal-win-characteristics-list-item {
 }
 
 .goods-modal-win-characteristics-title {
@@ -135,6 +164,16 @@ body:has(.goods-backdrop-wrap:not(.is-hidden)) {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.goods-modal-win-characteristics-list-item {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.goods-modal-win-characteristics-list-item:before {
+  content: '\1F784';
 }
 
 .goods-modal-win-explanation {
@@ -182,4 +221,94 @@ body:has(.goods-backdrop-wrap:not(.is-hidden)) {
 .goods-modal-win-video {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 1310px) {
+  .goods-modal-win-backdrop {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
+  .goods-modal-win {
+    height: 638px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .goods-modal-win-close-btn {
+    top: 32px;
+    right: 40px;
+  }
+
+  .goods-modal-win-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px;
+    width: 1060px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+  }
+
+  .goods-modal-win-content-wrap {
+    gap: 42px;
+    max-height: 100%;
+    padding: 65px 48px 43px 40px;
+    overflow-y: scroll;
+  }
+
+  .goods-modal-win-title {
+    font-size: 42px;
+  }
+
+  .goods-modal-win-sections-list-item {
+    flex-grow: 1;
+  }
+
+  .goods-modal-win-section-name-wrap {
+    padding-left: 40px;
+  }
+
+  .goods-modal-win-sections-list-item:first-child {
+    flex-grow: 0;
+    width: 144px;
+  }
+
+  .goods-modal-win-sections-list-item:first-child
+    .goods-modal-win-section-name-wrap {
+    padding-left: 0;
+  }
+
+  .goods-modal-win-media-wrap {
+    justify-content: space-between;
+  }
+
+  .goods-modal-win-img-wrap {
+    width: 488px;
+    height: 348px;
+  }
+
+  .goods-modal-win-video-wrap {
+    width: 488px;
+    height: 275px;
+  }
+
+  .goods-modal-win-video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .goods-modal-win-backdrop *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .goods-modal-win-backdrop *::-webkit-scrollbar-track {
+    background-color: #fffef7;
+  }
+
+  .goods-modal-win-backdrop *::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background: var(--accent);
+    cursor: pointer;
+  }
 }

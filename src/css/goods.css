@@ -17,15 +17,17 @@
   min-height: 100%;
 }
 
-.goods-card {
+.goods-card-btn {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 304px;
   height: 398px;
   padding: 20px 24px 24px;
+  border: none;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.11);
+  text-align: left;
 }
 
 .goods-card-title-icon {
@@ -158,7 +160,7 @@
     align-self: flex-end;
   }
 
-  .goods-card {
+  .goods-card-btn {
     gap: 31px;
     width: 100%;
     height: 100%;

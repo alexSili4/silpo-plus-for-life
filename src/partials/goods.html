@@ -2,9 +2,13 @@
   <div class="container goods-container">
     <h2 class="section-title goods-title">На що збираємо</h2>
     <div class="swiper goods-slider goods-mobile">
-      <ul class="swiper-wrapper goods-slider-wrapper">
+      <ul class="swiper-wrapper goods-slider-wrapper js-goods-list">
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="turnstile"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#turnstile"></use>
@@ -25,10 +29,14 @@
                 <p class="goods-card-desc-quantity">237 шт.</p>-->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="hemostatic-bandage"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#hemostatic-bandage"></use>
@@ -51,10 +59,14 @@
                 <p class="goods-card-desc-quantity">237 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="hemostatic-applicator"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#hemostatic-applicator"></use>
@@ -74,10 +86,14 @@
                 <p class="goods-card-desc-quantity">600 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="occlusal-sticker"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#occlusal-sticker"></use>
@@ -97,10 +113,14 @@
                 <p class="goods-card-desc-quantity">800 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="ventilator-bag"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#ventilator-bag"></use>
@@ -122,10 +142,14 @@
                 <p class="goods-card-desc-quantity">0 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="intraosseous-access"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#intraosseous-access"></use>
@@ -146,10 +170,14 @@
                 <p class="goods-card-desc-quantity">0 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="compression-bandage"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#compression-bandage"></use>
@@ -169,10 +197,14 @@
                 <p class="goods-card-desc-quantity">800 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="thermal-blanket"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#thermal-blanket"></use>
@@ -194,10 +226,14 @@
                 <p class="goods-card-desc-quantity">20 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="draggers-for-evacuation"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#draggers-for-evacuation"></use>
@@ -218,10 +254,14 @@
                 <p class="goods-card-desc-quantity">0 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
         <li class="swiper-slide goods-slider-slide">
-          <div class="goods-card">
+          <button
+            type="button"
+            class="goods-card-btn js-goods-btn"
+            data-good="combat-medic-backpacks"
+          >
             <div class="goods-card-title">
               <svg class="goods-card-title-icon">
                 <use href="/icons/icons.svg#combat-medic-backpacks"></use>
@@ -242,7 +282,7 @@
                 <p class="goods-card-desc-quantity">20 шт.</p> -->
               </div>
             </div>
-          </div>
+          </button>
         </li>
       </ul>
     </div>
@@ -255,9 +295,13 @@
         <use href="/icons/icons.svg#plus"></use>
       </svg>
     </button>
-    <ul class="goods-list">
+    <ul class="goods-list js-goods-list">
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="turnstile"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#turnstile"></use>
@@ -277,10 +321,14 @@
               <p class="goods-card-desc-quantity">237 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="hemostatic-bandage"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#hemostatic-bandage"></use>
@@ -300,10 +348,14 @@
               <p class="goods-card-desc-quantity">237 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="combat-medic-backpacks"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#combat-medic-backpacks"></use>
@@ -324,10 +376,14 @@
               <p class="goods-card-desc-quantity">20 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="hemostatic-applicator"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#hemostatic-applicator"></use>
@@ -347,10 +403,14 @@
               <p class="goods-card-desc-quantity">600 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="occlusal-sticker"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#occlusal-sticker"></use>
@@ -370,10 +430,14 @@
               <p class="goods-card-desc-quantity">800 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="ventilator-bag"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#ventilator-bag"></use>
@@ -396,10 +460,14 @@
               <p class="goods-card-desc-quantity">0 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="intraosseous-access"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#intraosseous-access"></use>
@@ -420,10 +488,14 @@
               <p class="goods-card-desc-quantity">0 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="compression-bandage"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#compression-bandage"></use>
@@ -443,7 +515,7 @@
               <p class="goods-card-desc-quantity">800 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <!-- <li class="goods-list-item make-donation">
         <button class="goods-make-donation-btn hiddenBtn" type="button">
@@ -454,7 +526,11 @@
         </button>
       </li> -->
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="thermal-blanket"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#thermal-blanket"></use>
@@ -475,10 +551,14 @@
               <p class="goods-card-desc-quantity">20 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
       <li class="goods-list-item">
-        <div class="goods-card">
+        <button
+          type="button"
+          class="goods-card-btn js-goods-btn"
+          data-good="draggers-for-evacuation"
+        >
           <div class="goods-card-title">
             <svg class="goods-card-title-icon">
               <use href="/icons/icons.svg#draggers-for-evacuation"></use>
@@ -498,7 +578,7 @@
               <p class="goods-card-desc-quantity">0 шт.</p> -->
             </div>
           </div>
-        </div>
+        </button>
       </li>
     </ul>
   </div>

@@ -11,6 +11,10 @@
   gap: 2px;
 }
 
+.header-container.center {
+  justify-content: center;
+}
+
 .mobile-menu-btn {
   flex-shrink: 0;
   display: flex;
