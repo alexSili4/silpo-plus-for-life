@@ -205,12 +205,15 @@ body:has(.goods-modal-win-backdrop-wrap:not(.is-hidden)) {
 }
 
 .goods-modal-win-img-wrap {
+  flex-shrink: 0;
   width: 343px;
   height: 245px;
 }
 
 .goods-modal-win-img {
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .goods-modal-win-video-wrap {

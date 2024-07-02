@@ -26,8 +26,14 @@ export default defineConfig({
           ) {
             return 'fonts/[name]-[hash][extname]';
           }
-          if (assetInfo.name.endsWith('.png')) {
+          if (
+            assetInfo.name.endsWith('.png') ||
+            assetInfo.name.endsWith('.jpg')
+          ) {
             return 'images/[name]-[hash][extname]';
+          }
+          if (assetInfo.name.endsWith('.mp4')) {
+            return 'video/[name]-[hash][extname]';
           }
           // Настройка для других файлов, если необходимо
           return 'assets/[name]-[hash][extname]';
