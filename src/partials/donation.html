@@ -26,30 +26,50 @@
     </div>
     <div class="donation-form-wrap">
       <p class="donation-form-title">Вкажіть суму внеску</p>
-      <form class="donation-form">
+      <form class="donation-form js-donation-form">
         <label class="donation-form-input-wrap">
-          <input type="text" value="0" class="donation-form-input" />
+          <input
+            name="amount"
+            type="text"
+            value="0"
+            class="donation-form-input js-donation-form-input-amount"
+          />
           <span class="donation-form-input-desc currency">₴</span>
         </label>
-        <ul class="donation-form-amount-add-btn-list">
+        <ul
+          class="donation-form-amount-add-btn-list js-donation-form-amount-add-btn-list"
+        >
           <li class="donation-form-amount-add-btn-list-item">
-            <button type="button" class="donation-form-amount-add-btn">
+            <button
+              type="button"
+              class="donation-form-amount-add-btn js-donation-form-amount-add-btn"
+              data-amount="100"
+            >
               +100 ₴
             </button>
           </li>
           <li class="donation-form-amount-add-btn-list-item">
-            <button type="button" class="donation-form-amount-add-btn">
+            <button
+              type="button"
+              class="donation-form-amount-add-btn js-donation-form-amount-add-btn"
+              data-amount="500"
+            >
               +500 ₴
             </button>
           </li>
           <li class="donation-form-amount-add-btn-list-item">
-            <button type="button" class="donation-form-amount-add-btn">
+            <button
+              type="button"
+              class="donation-form-amount-add-btn js-donation-form-amount-add-btn"
+              data-amount="1000"
+            >
               +1000 ₴
             </button>
           </li>
         </ul>
         <label class="donation-form-input-wrap">
           <input
+            name="name"
             type="text"
             placeholder="Вкажіть імʼя"
             class="donation-form-input name"
@@ -76,7 +96,11 @@
             </button>
           </div>
           <p class="donation-form-controls-or-label">або</p>
-          <button type="submit" class="donation-form-submit-btn">
+          <button
+            type="submit"
+            class="donation-form-submit-btn js-donation-form-submit-btn"
+            disabled
+          >
             <span class="donation-form-submit-btn-title">Оплатити карткою</span>
             <svg class="donation-form-submit-btn-icon">
               <use href="/icons/icons.svg#bank-card"></use>

@@ -15,6 +15,14 @@ const refs = {
   goodsModalWinSectionsList: document.querySelectorAll(
     '.js-goods-modal-win-sections-list'
   ),
+  donationFormAmountAddBtnList: document.querySelector(
+    '.js-donation-form-amount-add-btn-list'
+  ),
+  donationFormInputAmount: document.querySelector(
+    '.js-donation-form-input-amount'
+  ),
+  donationForm: document.querySelector('.js-donation-form'),
+  donationFormSubmitBtn: document.querySelector('.js-donation-form-submit-btn'),
 };
 
 export default refs;
