@@ -1,0 +1,50 @@
+.thanks-section {
+  padding-top: 110px;
+  padding-bottom: 230px;
+  overflow: hidden;
+}
+
+.thanks-title {
+  color: #37342b;
+  font-family: Akrobat;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.thanks-left-hand-mobile-icon {
+  position: absolute;
+  bottom: -193px;
+  right: 98px;
+  display: block;
+  width: 1619px;
+  height: 557px;
+}
+
+.thanks-right-hand-desk-icon {
+  position: absolute;
+  bottom: -236px;
+  left: 155px;
+  display: block;
+  width: 1265px;
+  height: 285px;
+}
+
+.thanks-heart-icon {
+  position: absolute;
+  bottom: -75px;
+  left: calc(50% - 29px);
+  width: 58px;
+  height: 53px;
+}
+
+@media screen and (max-width: 1309px) {
+  .thanks-left-hand-desk-icon {
+    display: none;
+  }
+
+  .thanks-right-hand-mobile-icon {
+    display: none;
+  }
+}
