@@ -1,4 +1,4 @@
-import refs from './refs';
+import refs from '/js/refs';
 
 const isHiddenClassName = 'is-hidden';
 

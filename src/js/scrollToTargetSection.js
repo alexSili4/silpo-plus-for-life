@@ -1,5 +1,5 @@
-import refs from './refs';
-import smoothScroll from './smoothScroll';
+import refs from '/js/refs';
+import smoothScroll from '/js/smoothScroll';
 
 refs.mainNavigation.forEach((el) => {
   el.addEventListener('click', onMainNavigationLinkClick);

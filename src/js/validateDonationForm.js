@@ -1,5 +1,5 @@
-import refs from './refs';
-import validateValue from './validateValue';
+import refs from '/js/refs';
+import validateValue from '/js/validateValue';
 
 refs.donationFormInputAmount.addEventListener(
   'input',

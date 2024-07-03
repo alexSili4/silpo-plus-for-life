@@ -173,7 +173,7 @@ body:has(.goods-modal-win-backdrop-wrap:not(.is-hidden)) {
 }
 
 .goods-modal-win-characteristics-list-item:before {
-  content: '\1F784';
+  content: '·';
 }
 
 .goods-modal-win-explanation {
