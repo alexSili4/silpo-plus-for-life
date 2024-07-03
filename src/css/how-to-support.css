@@ -36,7 +36,7 @@
 
 .how-to-support-card.goods {
   padding-top: 267px;
-  background-color: var(--accent);
+  background-color: #876dc7;
   background-image: url('/icons/howToSupport/card-goods-mobile-logos-bg.svg'),
     url('/icons/howToSupport/card-goods-mobile-bg.svg');
   background-position: 45px 72px, -154px 15px;
@@ -90,15 +90,6 @@
   color: var(--white-color);
   font-weight: 800;
   text-decoration: underline;
-}
-
-.how-to-support-card.silpo-bank {
-  padding-top: 186px;
-  background-image: url('/icons/howToSupport/card-silpo-bank-mobile-logo-bg.svg');
-  background-position: top 43px right 30px;
-  background-size: 227px 96px;
-  background-repeat: no-repeat;
-  background-color: var(--accent);
 }
 
 .how-to-support-card.donat {
@@ -227,12 +218,12 @@
 
   .how-to-support-card.goods {
     flex-shrink: 0;
-    width: 412px;
-    padding: 159px 40px 40px 40px;
+    width: 844px;
+    padding: 186px 365px 40px 40px;
     background-image: url('/icons/howToSupport/card-goods-desk-logos-bg.svg'),
       url('/icons/howToSupport/card-goods-desk-bg.svg');
-    background-size: 200px 120px, 520px 180px;
-    background-position: top 28px left 172px, top 42px left -25px;
+    background-size: 264px 159px, 907px 299px;
+    background-position: 508px 61px, -25px -18px;
   }
 
   .how-to-support-card-number.goods {
@@ -260,14 +251,7 @@
   }
 
   .how-to-support-card-desc.goods {
-    width: 100%;
-  }
-
-  .how-to-support-card.silpo-bank {
-    width: 412px;
-    background-image: url('/icons/howToSupport/card-silpo-bank-desk-logo-bg.svg');
-    background-position: top 35px right 45px;
-    background-size: 265px 112px;
+    width: 439px;
   }
 
   .how-to-support-card.donat {
