@@ -39,6 +39,54 @@
   height: 53px;
 }
 
+@media screen and (min-width: 1310px) {
+  .thanks-section {
+    padding-top: 280px;
+    padding-bottom: 365px;
+  }
+
+  .thanks-title {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .thanks-left-hand-mobile-icon {
+    display: none;
+  }
+
+  .thanks-right-hand-desk-icon {
+    display: none;
+  }
+
+  .thanks-left-hand-desk-icon {
+    position: absolute;
+    bottom: -310px;
+    right: 505px;
+    display: block;
+    width: 2517px;
+    height: 867px;
+  }
+
+  .thanks-right-hand-mobile-icon {
+    position: absolute;
+    bottom: -376px;
+    left: 613px;
+    display: block;
+    width: 1966px;
+    height: 444px;
+  }
+
+  .thanks-heart-icon {
+    position: absolute;
+    bottom: -126px;
+    left: calc(50% - 45.5px);
+    display: block;
+    width: 91px;
+    height: 82px;
+  }
+}
+
 @media screen and (max-width: 1309px) {
   .thanks-left-hand-desk-icon {
     display: none;
