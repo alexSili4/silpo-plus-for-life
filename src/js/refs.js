@@ -11,7 +11,6 @@ const refs = {
   goodsModalWinBackdrop: document.querySelectorAll(
     '.js-goods-modal-win-backdrop'
   ),
-  backdropWrap: document.querySelectorAll('.js-goods-modal-win-backdrop-wrap'),
   goodsModalWinSectionsList: document.querySelectorAll(
     '.js-goods-modal-win-sections-list'
   ),
@@ -23,6 +22,19 @@ const refs = {
   ),
   donationForm: document.querySelector('.js-donation-form'),
   donationFormSubmitBtn: document.querySelector('.js-donation-form-submit-btn'),
+  donationModalWinCloseBtn: document.querySelector(
+    '.js-donation-modal-win-close-btn'
+  ),
+  donationModalWin: document.querySelector('.js-donation-modal-win'),
+  donationModalWinBackdrop: document.querySelector(
+    '.js-donation-modal-win-backdrop'
+  ),
+  donationModalWinContainer: document.querySelector(
+    '.js-donation-modal-win-container'
+  ),
+  donationModalWinIframe: document.querySelector(
+    '.js-donation-modal-win-iframe'
+  ),
 };
 
 export default refs;
