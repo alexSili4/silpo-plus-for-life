@@ -16,15 +16,19 @@ function onDonationFormSubmit(e) {
 async function onPaymentStart(e) {
   const orderIdFieldName = 'order-id';
   const orderAmountFieldName = 'order-amount';
+  const paymentDescFieldName = 'payment-description';
 
   const widgetData = e.currentTarget;
   const fetchIntentionStatusData = {};
 
-  fetchIntentionStatusData[orderIdFieldName] = widgetData[orderIdFieldName];
+  fetchIntentionStatusData[orderIdFieldName] =
+    widgetData.attributes[orderIdFieldName].nodeValue;
   fetchIntentionStatusData[orderAmountFieldName] =
-    widgetData[orderAmountFieldName];
+    widgetData.attributes[orderAmountFieldName].nodeValue;
+  fetchIntentionStatusData[paymentDescFieldName] =
+    widgetData.attributes[paymentDescFieldName].nodeValue;
 
-  fetchIntentionStatus();
+  fetchIntentionStatus(fetchIntentionStatusData);
 }
 
 function onDonationFormInput(e) {
