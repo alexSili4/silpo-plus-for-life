@@ -21,20 +21,7 @@ const refs = {
     '.js-donation-form-input-amount'
   ),
   donationForm: document.querySelector('.js-donation-form'),
-  donationFormSubmitBtn: document.querySelector('.js-donation-form-submit-btn'),
-  donationModalWinCloseBtn: document.querySelector(
-    '.js-donation-modal-win-close-btn'
-  ),
-  donationModalWin: document.querySelector('.js-donation-modal-win'),
-  donationModalWinBackdrop: document.querySelector(
-    '.js-donation-modal-win-backdrop'
-  ),
-  donationModalWinContainer: document.querySelector(
-    '.js-donation-modal-win-container'
-  ),
-  donationModalWinIframe: document.querySelector(
-    '.js-donation-modal-win-iframe'
-  ),
+  paymentsWidget: document.querySelector('payments-widget'),
 };
 
 export default refs;

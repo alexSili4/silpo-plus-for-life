@@ -1,63 +1,43 @@
-import fetchPayWidget from './fetchPayWidget';
 import refs from '/js/refs';
-
-const isHiddenClassName = 'is-hidden';
+import fetchIntentionStatus from './fetchIntentionStatus';
 
 refs.donationFormAmountAddBtnList.addEventListener(
   'click',
   onDonationFormAmountAddBtnListClick
 );
-refs.donationForm.addEventListener('submit', onDonationFormSubmit);
 refs.donationForm.addEventListener('input', onDonationFormInput);
-refs.donationModalWinCloseBtn.addEventListener(
-  'click',
-  onDonationModalWinCloseBtnClick
-);
-refs.donationModalWinBackdrop.addEventListener(
-  'click',
-  onDonationModalWinBackdropClick
-);
+refs.paymentsWidget.addEventListener('paymentStarted', onPaymentStart);
 
-function onDonationModalWinBackdropClick(e) {
-  if (e.currentTarget !== e.target) {
-    return;
-  }
+async function onPaymentStart(e) {
+  const orderIdFieldName = 'order-id';
+  const orderAmountFieldName = 'order-amount';
 
-  e.currentTarget.parentNode.classList.add(isHiddenClassName);
-  window.removeEventListener('keydown', hideDonationModalWin);
-}
+  const widgetData = e.currentTarget;
+  const fetchIntentionStatusData = {};
 
-function onDonationModalWinCloseBtnClick(e) {
-  const targetModalWin = e.target.closest('.js-donation-modal-win');
-  targetModalWin.classList.add(isHiddenClassName);
-  window.removeEventListener('keydown', hideDonationModalWin);
-}
+  fetchIntentionStatusData[orderIdFieldName] = widgetData[orderIdFieldName];
+  fetchIntentionStatusData[orderAmountFieldName] =
+    widgetData[orderAmountFieldName];
 
-function hideDonationModalWin(e) {
-  if (e.code === 'Escape') {
-    const targetDonationModalWin = document.querySelector(
-      '.js-goods-modal-win'
-    );
-
-    targetDonationModalWin.classList.add(isHiddenClassName);
-    window.removeEventListener('keydown', hideDonationModalWin);
-  }
+  fetchIntentionStatus();
+  //for test
+  console.log(e);
 }
 
 function onDonationFormInput(e) {
   const donationFormData = {};
-
   const formData = new FormData(e.currentTarget);
   formData.forEach((value, key) => {
     donationFormData[key] = value;
   });
-
-  refs.donationFormSubmitBtn.disabled = !Number(donationFormData.amount);
-}
-
-function onDonationFormSubmit(e) {
-  e.preventDefault();
-  const formData = new FormData(e.currentTarget);
+  const amountValue = Number(donationFormData.amount);
+  refs.paymentsWidget['pay-disabled'] = amountValue ? 'true' : 'false';
+  refs.paymentsWidget['order-amount'] = amountValue ? String(amountValue) : '1';
+  refs.paymentsWidget['payment-description'] = donationFormData.name
+    ? donationFormData.name
+    : '';
+  //for test
+  console.dir(refs.paymentsWidget);
 }
 
 function onDonationFormAmountAddBtnListClick(e) {
@@ -72,7 +52,6 @@ function onDonationFormAmountAddBtnListClick(e) {
   refs.donationFormInputAmount.value = updatedAmountValue;
 
   const amountValue = Number(refs.donationFormInputAmount.value);
-  if (amountValue) {
-    refs.donationFormSubmitBtn.disabled = false;
-  }
+  refs.paymentsWidget['pay-disabled'] = amountValue ? 'true' : 'false';
+  refs.paymentsWidget['order-amount'] = amountValue ? String(amountValue) : '1';
 }
