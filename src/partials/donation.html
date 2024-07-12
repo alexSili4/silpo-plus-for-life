@@ -29,7 +29,7 @@
       <form class="donation-form js-donation-form">
         <label class="donation-form-input-wrap">
           <input
-            name="amount"
+            name="sum"
             type="text"
             value="0"
             class="donation-form-input js-donation-form-input-amount"
@@ -69,7 +69,7 @@
         </ul>
         <label class="donation-form-input-wrap">
           <input
-            name="name"
+            name="firstName"
             type="text"
             placeholder="Вкажіть імʼя"
             class="donation-form-input name"
@@ -96,16 +96,20 @@
             </button>
           </div>
           <p class="donation-form-controls-or-label">або</p>
-          <button
-            type="submit"
-            class="donation-form-submit-btn js-donation-form-submit-btn"
-            disabled
+          <!-- <payments-widget
+            token="<?=$payWidgetData->token?>"
+            branch-id="<?=$payWidgetData->branchId?>"
+            callback-url="<?=$payWidgetData->callbackUrl?>"
+            payment-description=""
+            is-two-stage="<?=$payWidgetData->isTwoStage?>"
+            merchant-id="<?=$payWidgetData->merchantID?>"
+            pay-disabled="true"
+            order-id="<?=$payWidgetData->orderId?>"
+            order-amount="1"
+            sub-merchant-id="<?=$payWidgetData->subMerchantID?>"
+            wait-pre-payment-action="ture"
           >
-            <span class="donation-form-submit-btn-title">Оплатити карткою</span>
-            <svg class="donation-form-submit-btn-icon">
-              <use href="/icons/icons.svg#bank-card"></use>
-            </svg>
-          </button>
+          </payments-widget> -->
         </div>
       </form>
     </div>

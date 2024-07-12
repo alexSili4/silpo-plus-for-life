@@ -6,7 +6,12 @@ refs.donationFormAmountAddBtnList.addEventListener(
   onDonationFormAmountAddBtnListClick
 );
 refs.donationForm.addEventListener('input', onDonationFormInput);
+refs.donationForm.addEventListener('submit', onDonationFormSubmit);
 refs.paymentsWidget.addEventListener('paymentStarted', onPaymentStart);
+
+function onDonationFormSubmit(e) {
+  e.preventDefault();
+}
 
 async function onPaymentStart(e) {
   const orderIdFieldName = 'order-id';
@@ -20,8 +25,6 @@ async function onPaymentStart(e) {
     widgetData[orderAmountFieldName];
 
   fetchIntentionStatus();
-  //for test
-  console.log(e);
 }
 
 function onDonationFormInput(e) {
@@ -30,14 +33,22 @@ function onDonationFormInput(e) {
   formData.forEach((value, key) => {
     donationFormData[key] = value;
   });
-  const amountValue = Number(donationFormData.amount);
-  refs.paymentsWidget['pay-disabled'] = amountValue ? 'true' : 'false';
-  refs.paymentsWidget['order-amount'] = amountValue ? String(amountValue) : '1';
-  refs.paymentsWidget['payment-description'] = donationFormData.name
-    ? donationFormData.name
+
+  const amountValue = Number(donationFormData.sum);
+
+  const payDisabledAttributeValue = amountValue ? 'false' : 'true';
+  refs.paymentsWidget.setAttribute('pay-disabled', payDisabledAttributeValue);
+
+  const orderAmountAttributeValue = amountValue ? String(amountValue) : '1';
+  refs.paymentsWidget.setAttribute('order-amount', orderAmountAttributeValue);
+
+  const paymentDescAttributeValue = donationFormData.firstName
+    ? donationFormData.firstName
     : '';
-  //for test
-  console.dir(refs.paymentsWidget);
+  refs.paymentsWidget.setAttribute(
+    'payment-description',
+    paymentDescAttributeValue
+  );
 }
 
 function onDonationFormAmountAddBtnListClick(e) {
@@ -52,6 +63,10 @@ function onDonationFormAmountAddBtnListClick(e) {
   refs.donationFormInputAmount.value = updatedAmountValue;
 
   const amountValue = Number(refs.donationFormInputAmount.value);
-  refs.paymentsWidget['pay-disabled'] = amountValue ? 'true' : 'false';
-  refs.paymentsWidget['order-amount'] = amountValue ? String(amountValue) : '1';
+
+  const payDisabledAttributeValue = amountValue ? 'false' : 'true';
+  refs.paymentsWidget.setAttribute('pay-disabled', payDisabledAttributeValue);
+
+  const orderAmountAttributeValue = amountValue ? String(amountValue) : '1';
+  refs.paymentsWidget.setAttribute('order-amount', orderAmountAttributeValue);
 }
