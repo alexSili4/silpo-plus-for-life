@@ -158,6 +158,10 @@
   color: rgba(55, 52, 43, 0.6);
 }
 
+.donation-form-input.sum::placeholder {
+  color: #37342b;
+}
+
 .donation-form-input-desc {
   position: absolute;
   top: 50%;

@@ -256,13 +256,10 @@
 
   .how-to-support-card.donat {
     width: 412px;
+    padding-top: 144px;
     background-image: url('/icons/howToSupport/card-donat-desk-bg.svg');
     background-position: -28px 30px;
     background-size: 455px 207px;
-  }
-
-  .how-to-support-make-donation-btn {
-    width: 244px;
   }
 
   .how-to-support-card.bonuses {
