@@ -6,7 +6,7 @@ import FullReload from 'vite-plugin-full-reload';
 export default defineConfig({
   root: 'src',
   build: {
-    minify: false,
+    // minify: false,
     rollupOptions: {
       input: {
         main: resolve(__dirname, './src/index.html'),
@@ -29,7 +29,7 @@ export default defineConfig({
           }
           if (
             assetInfo.name.endsWith('.ttf') ||
-            assetInfo.name.endsWith('.otf')
+            assetInfo.name.endsWith('.woff2')
           ) {
             return 'fonts/[name]-[hash][extname]';
           }
