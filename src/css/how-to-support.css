@@ -171,6 +171,21 @@
   width: 260px;
 }
 
+.how-to-support-card.master-card {
+  padding-top: 276px;
+  background-image: url('/icons/howToSupport/card-master-card-mobile-logo-bg.svg'),
+    url('/icons/howToSupport/card-master-card-app-mobile-logo-bg.svg'),
+    linear-gradient(
+      193.37deg,
+      #fddfb9 -20.666%,
+      #feedd9 -1.043%,
+      #eb9d3b 91.675%
+    );
+  background-position: top 177px left 30px, top -23px left 110px, 0px 0px;
+  background-size: 116px 78px, 352px 371px, cover;
+  background-repeat: no-repeat;
+}
+
 .how-to-support-card.collection {
   padding-top: 213px;
   background-color: #947dcd;
@@ -269,6 +284,26 @@
 
   .how-to-support-card-desc.bonuses {
     width: auto;
+  }
+
+  .how-to-support-card.master-card {
+    width: 100%;
+    padding-top: 132px;
+    background-image: url('/icons/howToSupport/card-master-card-desk-logo-bg.svg'),
+      url('/icons/howToSupport/card-master-card-app-desk-logo-bg.svg'),
+      linear-gradient(
+        193.37deg,
+        #fddfb9 -20.666%,
+        #feedd9 -1.043%,
+        #eb9d3b 91.675%
+      );
+    background-position: top 64px left 547px, top 40px left 846px, 0px 0px;
+    background-size: 244px 165px, 350px 409px, cover;
+    background-repeat: no-repeat;
+  }
+
+  .how-to-support-card-desc.master-card {
+    width: 439px;
   }
 
   .how-to-support-card.collection {
