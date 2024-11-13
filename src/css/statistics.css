@@ -1,12 +1,6 @@
 .statistics-section {
-  background-color: #6f648d;
-}
-
-.statistics-section-bg {
   padding-top: 24px;
-  padding-bottom: 40px;
-  background-color: var(--body-color);
-  border-radius: 0px 0px 30px 30px;
+  padding-bottom: 24px;
 }
 
 .statistics-goods-text-wrap {
@@ -111,10 +105,9 @@
 }
 
 @media screen and (min-width: 1310px) {
-  .statistics-section-bg {
+  .statistics-section {
     padding-top: 32px;
-    padding-bottom: 82px;
-    border-radius: 0px 0px 60px 60px;
+    padding-bottom: 0px;
   }
 
   .statistics-container {

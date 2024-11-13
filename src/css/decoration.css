@@ -1,0 +1,194 @@
+.decoration-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 48px;
+}
+
+.decoration-banner-wrap-link {
+  position: relative;
+}
+
+.decoration-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  border-radius: 30px;
+  background-color: #8264a7;
+  padding: 48px 26px 70px 30px;
+  background-image: url('/images/decoration/hand-mobile.png'),
+    url('/icons/decoration/banner-card-line-mobile.svg');
+  background-size: 246px 317px, 698px 603px;
+  background-position: top 132px left 151px, top 90px left -17px;
+  background-repeat: no-repeat;
+}
+
+.decoration-banner-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.decoration-banner-title {
+  color: var(--white-color);
+  font-family: Akrobat;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.decoration-banner-text {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.decoration-banner-promotions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.decoration-banner-promotions-list-item {
+}
+
+.decoration-banner-promotions-list-img {
+  height: 29px;
+}
+
+.decoration-banner-label {
+  position: absolute;
+  top: -25px;
+  left: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 171px;
+  height: 67px;
+  border-radius: 100px;
+  background-color: #ffc72f;
+  transform: rotate(7.26deg);
+}
+
+.decoration-banner-label-text {
+  color: #37342b;
+  font-family: Manrope;
+  font-size: 17.58px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01;
+  text-align: center;
+}
+
+.decoration-conditions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px 30px 40px;
+  border-radius: 30px;
+  background-color: #8264a7;
+}
+
+.decoration-conditions-text {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.decoration-conditions-text-accent {
+  font-weight: 700;
+}
+
+.decoration-conditions-desc {
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.decoration-conditions-text-link {
+  color: inherit;
+}
+
+.decoration-conditions-text-link.silpo {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1310px) {
+  .decoration-content-wrap {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 60px;
+  }
+
+  .decoration-banner-wrap-link .decoration-banner-label {
+    display: none;
+  }
+
+  .decoration-banner {
+    flex-shrink: 0;
+    justify-content: space-between;
+    gap: 40px;
+    width: 740px;
+    padding: 74px 40px 45px;
+    background-image: url('/images/decoration/hand-desk.png'),
+      url('/icons/decoration/banner-card-line-desk.svg');
+    background-size: 445px 575px, 1036px 732px;
+    background-position: top -173px left 399px, top -90px left 275px;
+    background-repeat: no-repeat;
+  }
+
+  .decoration-banner-text-wrap {
+    gap: 24px;
+  }
+
+  .decoration-banner-title {
+    font-size: 50px;
+  }
+
+  .decoration-banner-text {
+    width: 334px;
+  }
+
+  .decoration-banner-promotions-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .decoration-banner-promotions-list-img {
+    height: 33px;
+  }
+
+  .decoration-banner-label {
+    top: -50px;
+    left: 227px;
+    width: 254px;
+    height: 98px;
+  }
+
+  .decoration-banner-label-text {
+    font-size: 26px;
+  }
+
+  .decoration-conditions {
+    gap: 41px;
+    padding: 74px 40px 45px;
+    background-image: url('/icons/decoration/conditions-card-line-desk.svg');
+    background-size: 1036px 732px;
+    background-position: top -80px left -486px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1309px) {
+  .decoration-conditions .decoration-banner-label {
+    display: none;
+  }
+}

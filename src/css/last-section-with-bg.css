@@ -1,0 +1,18 @@
+.last-section-with-bg-section {
+  background-color: #6f648d;
+}
+
+.last-section-with-bg-section-bg {
+  padding-top: 32px;
+  padding-bottom: 72px;
+  background-color: var(--body-color);
+  border-radius: 0px 0px 30px 30px;
+}
+
+@media screen and (min-width: 1310px) {
+  .last-section-with-bg-section-bg {
+    padding-top: 108px;
+    padding-bottom: 120px;
+    border-radius: 0px 0px 60px 60px;
+  }
+}
