@@ -61,7 +61,7 @@
 
 .decoration-banner-label {
   position: absolute;
-  top: -25px;
+  top: 15px;
   left: 144px;
   display: flex;
   align-items: center;
@@ -111,6 +111,18 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.decoration-conditions-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--white-color);
+  font-family: Akrobat;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 0.9;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .decoration-conditions-text-link {

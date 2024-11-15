@@ -288,3 +288,7 @@
 </symbol>
 </defs>
 </svg>
+<symbol id="decration-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#876dc7" style="stroke: var(--color1, #876dc7)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M1.231 1.231l29.538 29.538"></path>
+<path fill="none" stroke="#876dc7" style="stroke: var(--color1, #876dc7)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M30.769 1.231l-29.538 29.538"></path>
+</symbol>
