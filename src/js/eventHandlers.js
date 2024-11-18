@@ -1,12 +1,13 @@
+import makeBlur from '/js/makeBlur';
 import refs from '/js/refs';
 
 const isHiddenClassName = 'is-hidden';
 
-refs.questionsList.addEventListener('click', toggleShowAnswer);
+// refs.questionsList.addEventListener('click', toggleShowAnswer);
 refs.mobileMenuToggleBtn.forEach((el) => {
   el.addEventListener('click', toggleMobileMenu);
 });
-refs.mobileMenuList.addEventListener('click', onMobileMenuLinkClick);
+// refs.mobileMenuList.addEventListener('click', onMobileMenuLinkClick);
 refs.goodsLists.forEach((list) => {
   list.addEventListener('click', onGoodBtnClick);
 });
@@ -19,6 +20,45 @@ refs.goodsModalWinBackdrop.forEach((backdrop) => {
 refs.goodsModalWinSectionsList.forEach((section) => {
   section.addEventListener('click', onGoodsModalWinSectionsListInput);
 });
+refs.decorationConditionsBtn.addEventListener(
+  'click',
+  onDecorationConditionsBtnClick
+);
+refs.decorationModalWinCloseBtn.addEventListener(
+  'click',
+  onDecorationModalWinCloseBtnClick
+);
+refs.decorationModalWinBackdrop.addEventListener(
+  'click',
+  onDecorationModalWinBackdropClick
+);
+
+function onDecorationModalWinBackdropClick(e) {
+  if (e.currentTarget !== e.target) {
+    return;
+  }
+
+  refs.decorationModalWin.classList.add(isHiddenClassName);
+  window.removeEventListener('keydown', hideDecorationModalWin);
+}
+
+function onDecorationModalWinCloseBtnClick(e) {
+  refs.decorationModalWin.classList.add(isHiddenClassName);
+  window.removeEventListener('keydown', hideDecorationModalWin);
+}
+
+function hideDecorationModalWin(e) {
+  if (e.code === 'Escape') {
+    refs.decorationModalWin.classList.add(isHiddenClassName);
+    window.removeEventListener('keydown', hideDecorationModalWin);
+  }
+}
+
+function onDecorationConditionsBtnClick(e) {
+  makeBlur(e.currentTarget);
+  refs.decorationModalWin.classList.remove(isHiddenClassName);
+  window.addEventListener('keydown', hideDecorationModalWin);
+}
 
 function onGoodsModalWinSectionsListInput(e) {
   const isInput = e.target.nodeName === 'INPUT';

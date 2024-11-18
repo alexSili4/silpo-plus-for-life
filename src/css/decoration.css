@@ -149,6 +149,7 @@
     justify-content: space-between;
     gap: 40px;
     width: 740px;
+    height: 100%;
     padding: 74px 40px 45px;
     background-image: url('/images/decoration/hand-desk.png'),
       url('/icons/decoration/banner-card-line-desk.svg');

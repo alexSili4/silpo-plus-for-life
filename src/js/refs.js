@@ -22,6 +22,16 @@ const refs = {
   ),
   donationForm: document.querySelector('.js-donation-form'),
   paymentsWidget: document.querySelector('payments-widget'),
+  decorationConditionsBtn: document.querySelector(
+    '.js-decoration-conditions-btn'
+  ),
+  decorationModalWin: document.querySelector('.js-decoration-modal-win'),
+  decorationModalWinCloseBtn: document.querySelector(
+    '.js-decoration-modal-win-content-close-btn'
+  ),
+  decorationModalWinBackdrop: document.querySelector(
+    '.js-decoration-modal-win-content-wrap'
+  ),
 };
 
 export default refs;

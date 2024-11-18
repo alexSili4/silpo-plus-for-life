@@ -44,8 +44,9 @@ body:has(.decoration-modal-win:not(.is-hidden)) {
 
 .decoration-modal-win-content {
   position: relative;
+  display: flex;
   width: 342px;
-  height: 100%;
+  max-height: 100%;
   border-radius: 30px;
   background-color: #fffef7;
 }
@@ -74,8 +75,8 @@ body:has(.decoration-modal-win:not(.is-hidden)) {
   flex-direction: column;
   gap: 24px;
   padding: 32px 24px;
-  height: 100%;
-  overflow-y: scroll;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .decoration-modal-win-main-info-wrap {
@@ -190,4 +191,62 @@ body:has(.decoration-modal-win:not(.is-hidden)) {
 
 .decoration-modal-win-final-desc-text-accent {
   font-weight: 600;
+}
+
+.decoration-modal-win *::-webkit-scrollbar {
+  width: 12px;
+}
+
+.decoration-modal-win *::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.decoration-modal-win *::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1310px) {
+  .decoration-modal-win-content-wrap {
+    padding-top: 83px;
+    padding-bottom: 83px;
+  }
+
+  .decoration-modal-win-content {
+    width: 1276px;
+  }
+
+  .decoration-modal-win-content-close-btn {
+    top: 59px;
+    right: 61px;
+  }
+
+  .decoration-modal-win-content-container {
+    padding: 55px 89px;
+  }
+
+  .decoration-modal-win-main-info-wrap {
+    gap: 52px;
+  }
+
+  .decoration-modal-win-title-wrap {
+    gap: 32px;
+  }
+
+  .decoration-modal-win-steps-list {
+    flex-direction: row;
+  }
+
+  .decoration-modal-win-steps-list-item {
+    width: calc((100% - 32px) / 3);
+  }
+
+  .decoration-modal-win-steps-list-step-wrap {
+    height: 100%;
+  }
+
+  .decoration-modal-win-final-desc-wrap {
+    gap: 52px;
+  }
 }
