@@ -48,7 +48,7 @@
 @media screen and (min-width: 1310px) {
   .about-section {
     padding-top: 80px;
-    padding-bottom: 89px;
+    padding-bottom: 0px;
   }
 
   .about-container {
